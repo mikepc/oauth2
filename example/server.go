@@ -1,7 +1,6 @@
 package main
 
 import (
-	"fmt"
 	"github.com/dgrijalva/jwt-go"
 	"github.com/valyala/fasthttp"
 	"log"
@@ -37,12 +36,10 @@ func main() {
 
 	srv.SetPasswordAuthorizationHandler(func(username, password string) (userID string, err error) {
 		if username == "test" && password == "test" {
-			userID = "test"
-			fmt.Println("through\n")
-		} else {
-			fmt.Println("no\n")
+			return "123456", nil
 		}
-		return
+
+		return "", errors.ErrAccessDenied
 	})
 
 	srv.SetUserAuthorizationHandler(func(ctx *fasthttp.RequestCtx) (userID string, err error) {
