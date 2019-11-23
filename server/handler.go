@@ -6,6 +6,7 @@ import (
 	"oauth2/errors"
 	"encoding/base64"
 	"github.com/valyala/fasthttp"
+	"strings"
 	"time"
 )
 
@@ -56,19 +57,19 @@ func ClientFormHandler(ctx *fasthttp.RequestCtx) (string, string, error) {
 
 // ClientBasicHandler get client data from basic authorization
 func ClientBasicHandler(ctx *fasthttp.RequestCtx) (string, string, error) {
-	authorization := ctx.Request.Header.Peek("Authorization")
-	if !bytes.HasPrefix(authorization, []byte("Basic")) || len(authorization) <= 6 {
-		return "", "", errors.ErrInvalidClient
+	auth := string(ctx.Request.Header.Peek("Authorization"))
+	prefix := "Basic "
+
+	if auth != "" && strings.HasPrefix(auth, prefix) {
+		auth = auth[len(prefix):]
 	}
 
-	if b, err := base64.StdEncoding.DecodeString(string(authorization[6:])); err != nil {
+	if b, err := base64.StdEncoding.DecodeString(auth); err != nil {
+		return "", "", errors.ErrInvalidClient
+	} else if arr := bytes.Split(b, []byte(":")); len(arr) != 2 {
 		return "", "", errors.ErrInvalidClient
 	} else {
-		arr := bytes.Split(b, []byte(":"))
-		if len(arr) != 2 {
-			return "", "", errors.ErrInvalidClient
-		}
-
-		return string(arr[0]), string(arr[1]), nil
+		clientID, clientSecret := string(arr[0]), string(arr[1])
+		return clientID, clientSecret, nil
 	}
 }
