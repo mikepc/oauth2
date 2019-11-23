@@ -2,7 +2,7 @@ package server
 
 import (
 	"bytes"
-	"oauth2"
+	"github.com/wyanlord/oauth2"
 	"encoding/json"
 	"fmt"
 	"github.com/valyala/fasthttp"
@@ -10,7 +10,7 @@ import (
 	"strings"
 	"time"
 
-	"oauth2/errors"
+	"github.com/wyanlord/oauth2/errors"
 )
 
 // NewDefaultServer create a default authorization server

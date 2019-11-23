@@ -4,12 +4,12 @@ import (
 	"github.com/dgrijalva/jwt-go"
 	"github.com/valyala/fasthttp"
 	"log"
-	"oauth2/errors"
-	"oauth2/generates"
-	"oauth2/manage"
-	"oauth2/models"
-	"oauth2/server"
-	"oauth2/store"
+	"github.com/wyanlord/oauth2/errors"
+	"github.com/wyanlord/oauth2/generates"
+	"github.com/wyanlord/oauth2/manage"
+	"github.com/wyanlord/oauth2/models"
+	"github.com/wyanlord/oauth2/server"
+	"github.com/wyanlord/oauth2/store"
 )
 
 func main() {

@@ -1,7 +1,7 @@
 package models
 
 import (
-	"oauth2"
+	"github.com/wyanlord/oauth2"
 	"time"
 
 )

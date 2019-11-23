@@ -2,8 +2,8 @@ package server
 
 import (
 	"bytes"
-	"oauth2"
-	"oauth2/errors"
+	"github.com/wyanlord/oauth2"
+	"github.com/wyanlord/oauth2/errors"
 	"encoding/base64"
 	"github.com/valyala/fasthttp"
 	"strings"

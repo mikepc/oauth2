@@ -1,7 +1,7 @@
 package store
 
 import (
-	"oauth2"
+	"github.com/wyanlord/oauth2"
 	"errors"
 	"sync"
 

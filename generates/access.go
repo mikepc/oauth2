@@ -2,8 +2,8 @@ package generates
 
 import (
 	"bytes"
-	"oauth2"
-	"oauth2/utils/uuid"
+	"github.com/wyanlord/oauth2"
+	"github.com/wyanlord/oauth2/utils/uuid"
 	"encoding/base64"
 	"strconv"
 	"strings"

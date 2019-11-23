@@ -1,4 +1,4 @@
-module oauth2
+module github.com/wyanlord/oauth2
 
 go 13.0
 

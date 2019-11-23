@@ -1,7 +1,7 @@
 package manage
 
 import (
-	"oauth2/errors"
+	"github.com/wyanlord/oauth2/errors"
 	"net/url"
 	"strings"
 
