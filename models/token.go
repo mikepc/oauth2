@@ -1,7 +1,7 @@
 package models
 
 import (
-	"github.com/wyanlord/go-oauth2-fasthttp"
+	"github.com/wyanlord/oauth2"
 	"time"
 
 )

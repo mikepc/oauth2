@@ -2,8 +2,8 @@ package generates
 
 import (
 	"bytes"
-	"github.com/wyanlord/go-oauth2-fasthttp"
-	"github.com/wyanlord/go-oauth2-fasthttp/utils/uuid"
+	"github.com/wyanlord/oauth2"
+	"github.com/wyanlord/oauth2/utils/uuid"
 	"encoding/base64"
 	"strconv"
 	"strings"

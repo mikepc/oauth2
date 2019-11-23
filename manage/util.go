@@ -1,7 +1,7 @@
 package manage
 
 import (
-	"github.com/wyanlord/go-oauth2-fasthttp/errors"
+	"github.com/wyanlord/oauth2/errors"
 	"net/url"
 	"strings"
 

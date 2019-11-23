@@ -1,6 +1,6 @@
-module github.com/wyanlord/go-oauth2-fasthttp
+module github.com/wyanlord/oauth2
 
-go 13.0
+go 1.13
 
 require (
 	github.com/dgrijalva/jwt-go v3.2.0+incompatible
