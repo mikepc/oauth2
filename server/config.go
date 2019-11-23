@@ -1,7 +1,7 @@
 package server
 
 import (
-	"github.com/wyanlord/oauth2"
+	"github.com/wyanlord/go-oauth2-fasthttp"
 	"github.com/valyala/fasthttp"
 	"time"
 )

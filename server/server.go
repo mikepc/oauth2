@@ -2,7 +2,7 @@ package server
 
 import (
 	"bytes"
-	"github.com/wyanlord/oauth2"
+	"github.com/wyanlord/go-oauth2-fasthttp"
 	"encoding/json"
 	"fmt"
 	"github.com/valyala/fasthttp"
@@ -10,7 +10,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/wyanlord/oauth2/errors"
+	"github.com/wyanlord/go-oauth2-fasthttp/errors"
 )
 
 // NewDefaultServer create a default authorization server

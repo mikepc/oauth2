@@ -1,10 +1,10 @@
 package manage
 
 import (
-	"github.com/wyanlord/oauth2"
-	"github.com/wyanlord/oauth2/errors"
-	"github.com/wyanlord/oauth2/generates"
-	"github.com/wyanlord/oauth2/models"
+	"github.com/wyanlord/go-oauth2-fasthttp"
+	"github.com/wyanlord/go-oauth2-fasthttp/errors"
+	"github.com/wyanlord/go-oauth2-fasthttp/generates"
+	"github.com/wyanlord/go-oauth2-fasthttp/models"
 	"time"
 )
 

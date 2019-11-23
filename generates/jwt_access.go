@@ -1,9 +1,9 @@
 package generates
 
 import (
-	"github.com/wyanlord/oauth2"
-	"github.com/wyanlord/oauth2/errors"
-	"github.com/wyanlord/oauth2/utils/uuid"
+	"github.com/wyanlord/go-oauth2-fasthttp"
+	"github.com/wyanlord/go-oauth2-fasthttp/errors"
+	"github.com/wyanlord/go-oauth2-fasthttp/utils/uuid"
 	"encoding/base64"
 	"strings"
 	"time"

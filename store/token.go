@@ -1,9 +1,9 @@
 package store
 
 import (
-	"github.com/wyanlord/oauth2"
-	"github.com/wyanlord/oauth2/models"
-	"github.com/wyanlord/oauth2/utils/uuid"
+	"github.com/wyanlord/go-oauth2-fasthttp"
+	"github.com/wyanlord/go-oauth2-fasthttp/models"
+	"github.com/wyanlord/go-oauth2-fasthttp/utils/uuid"
 	"encoding/json"
 	"time"
 

@@ -1,4 +1,4 @@
-module github.com/wyanlord/oauth2
+module github.com/wyanlord/go-oauth2-fasthttp
 
 go 13.0
 
