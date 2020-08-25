@@ -1,10 +1,10 @@
 package manage
 
 import (
-	"github.com/wyanlord/oauth2"
-	"github.com/wyanlord/oauth2/errors"
-	"github.com/wyanlord/oauth2/generates"
-	"github.com/wyanlord/oauth2/models"
+	"github.com/mikepc/oauth2"
+	"github.com/mikepc/oauth2/errors"
+	"github.com/mikepc/oauth2/generates"
+	"github.com/mikepc/oauth2/models"
 	"time"
 )
 

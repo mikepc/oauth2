@@ -1,7 +1,7 @@
 package server
 
 import (
-	"github.com/wyanlord/oauth2"
+	"github.com/mikepc/oauth2"
 )
 
 // SetTokenType token type

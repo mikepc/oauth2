@@ -1,9 +1,9 @@
 package generates
 
 import (
-	"github.com/wyanlord/oauth2"
-	"github.com/wyanlord/oauth2/errors"
-	"github.com/wyanlord/oauth2/utils/uuid"
+	"github.com/mikepc/oauth2"
+	"github.com/mikepc/oauth2/errors"
+	"github.com/mikepc/oauth2/utils/uuid"
 	"encoding/base64"
 	"strings"
 	"time"

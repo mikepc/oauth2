@@ -1,9 +1,9 @@
 package store
 
 import (
-	"github.com/wyanlord/oauth2"
-	"github.com/wyanlord/oauth2/models"
-	"github.com/wyanlord/oauth2/utils/uuid"
+	"github.com/mikepc/oauth2"
+	"github.com/mikepc/oauth2/models"
+	"github.com/mikepc/oauth2/utils/uuid"
 	"encoding/json"
 	"time"
 
